@@ -10,7 +10,7 @@
 
 ```js
 
-var truncate = require('truncate').truncate;
+var truncate = require('trunky').truncate;
 
 truncate('Hello world', 8); // Hello...
 truncate('<b>Hello</b> world', 8); // Hello...
