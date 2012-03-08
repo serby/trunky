@@ -1,0 +1,24 @@
+{
+	"author": "Paul Serby <paul@serby.net>",
+	"name": "trunky",
+	"description": "Basic truncation and string tools",
+	"version": "0.0.2",
+	"tags": [],
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:serby/trunky"
+	},
+	"main": "lib/trunky",
+	"scripts": {
+		"test": "mocha -r should -R List"
+	},
+	"engines": {
+		"node": ">0.4.0"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"mocha": "*",
+		"should": "*"
+	}
+}
