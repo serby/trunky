@@ -8,15 +8,12 @@
 
 ## Usage
 
-'''js
+```js
 
-var copy = '';// Load copy
 var truncate = require('truncate').truncate;
 
-
-truncate(copy, 10);
-
-Will truncate and add an ellipsis
+truncate('Hello world', 8); // Hello...
+truncate('<b>Hello</b> world', 8); // Hello...
 
 ```
 
