@@ -3,7 +3,7 @@
 	"name": "trunky",
 	"description": "Basic truncation and string tools",
 	"version": "0.0.2",
-	"tags": [],
+	"tags": ["string", "truncation", "text", "manipulation"],
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:serby/trunky"
