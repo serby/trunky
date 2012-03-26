@@ -4,22 +4,22 @@
 
 ## Installation
 
-      npm install trunky
+    npm install trunky
 
 ## Usage
 
 ```js
-
 var truncate = require('trunky').truncate;
 
 truncate('Hello world', 8); // Hello…
 truncate('<b>Hello</b> world', 8); // Hello…
 ```
 
-**Note:** the unicode character `…` (`\u2026`) is used by default. If your application does not support unicode, `truncate()` takes a unicode flag as the third argument:
+**Note:** the unicode character `…` (`\u2026`) is used by default. If your application does not support unicode or you would prefer a different ellipsis character, `truncate()` takes an optional third argument which is the string to use:
 
 ```js
-truncate('Hello world', 8, false); // Hello...
+truncate('Hello world', 8, '...'); // Hello...
+truncate('Hello world', 8, ' etc.'); // Hello etc.
 ```
 
 ## Credits

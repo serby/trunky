@@ -20,12 +20,25 @@ describe('trunky', function() {
       trunky.truncateWithEllipsis('<p>This</p> <strong>is a</strong> <b>test</b>', 10).should.equal('This is a\u2026');
     });
 
-    it('should truncate a simple string with unicode off', function() {
-      trunky.truncateWithEllipsis('This is a test', 10, false).should.equal('This is a...');
+    it('should truncate a simple string with a custom ellipsis string', function() {
+      trunky.truncateWithEllipsis('This is a test', 10, '...').should.equal('This is a...');
     });
 
-    it('should truncate HTML simple string with unicode off', function() {
-      trunky.truncateWithEllipsis('<p>This</p> <strong>is a</strong> <b>test</b>', 10, false).should.equal('This is a...');
+    it('should truncate HTML simple string with a custom ellipsis string', function() {
+      trunky.truncateWithEllipsis('<p>This</p> <strong>is a</strong> <b>test</b>', 10, '...').should.equal('This is a...');
+    });
+
+    it('should truncate at the desired length if no word breaks are found', function () {
+      trunky.truncateWithEllipsis('abcdefghijklmnopqrstuvwxyz', 10).should.have.lengthOf(11);
+    });
+
+    it('should truncate at the desired length if a word break occurs outside of the desired length', function () {
+      trunky.truncateWithEllipsis('abcdefghijkl mnopqrstuvwxyz', 10).should.have.lengthOf(11);
+    });
+
+    it('should truncate at the last word break that occurs inside the desired length', function () {
+      trunky.truncateWithEllipsis('ab cdefghijklmnopqrstuvwxyz', 10).should.have.lengthOf(3);
+      trunky.truncateWithEllipsis('ab cdef ghijklmnopqrstuvwxyz', 10).should.have.lengthOf(8);
     });
 
   });
