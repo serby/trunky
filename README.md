@@ -12,9 +12,14 @@
 
 var truncate = require('trunky').truncate;
 
-truncate('Hello world', 8); // Hello...
-truncate('<b>Hello</b> world', 8); // Hello...
+truncate('Hello world', 8); // Hello…
+truncate('<b>Hello</b> world', 8); // Hello…
+```
 
+**Note:** the unicode character `…` (`\u2026`) is used by default. If your application does not support unicode, `truncate()` takes a unicode flag as the third argument:
+
+```js
+truncate('Hello world', 8, false); // Hello...
 ```
 
 ## Credits
