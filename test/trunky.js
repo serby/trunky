@@ -2,6 +2,21 @@ var trunky = require('..');
 
 describe('trunky', function() {
 
+  describe('#stripTags()', function() {
+    it('should not alter a string with no html', function () {
+      trunky.stripTags('Hello, world!').should.equal('Hello, world!');
+    });
+
+    it('should strip simple html tags', function () {
+      trunky.stripTags('<b>Hello</b>, world!').should.equal('Hello, world!');
+    });
+
+    it('should tags that contain whitespace', function () {
+      trunky.stripTags('Hello, <\np>world!</p>').should.equal('Hello, world!');
+    });
+
+  });
+
   describe('#truncateWithEllipsis()', function() {
 
     it('should leave an empty string unchanged', function() {
