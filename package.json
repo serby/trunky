@@ -1,7 +1,10 @@
 {
 	"author": "Paul Serby <paul@serby.net>",
+	 "contributors": [
+    "Ben Gourley"
+  ],
 	"name": "trunky",
-	"description": "Basic truncation and string tools",
+	"description": "String truncation",
 	"version": "0.1.0",
 	"tags": ["string", "truncation", "text", "manipulation"],
 	"repository": {
