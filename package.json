@@ -5,7 +5,7 @@
   ],
 	"name": "trunky",
 	"description": "String truncation",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"tags": ["string", "truncation", "text", "manipulation"],
 	"repository": {
 		"type": "git",

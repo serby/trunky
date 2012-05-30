@@ -9,7 +9,7 @@
 ## Usage
 
 ```js
-var truncate = require('trunky').truncate;
+var truncate = require('trunky').truncateWithEllipsis;
 
 truncate('Hello world', 8); // Hello…
 truncate('<b>Hello</b> world', 8); // Hello…
@@ -23,7 +23,7 @@ truncate('Hello world', 8, ' etc.'); // Hello etc.
 ```
 
 ## Credits
-[Paul Serby](https://github.com/serby/) follow me on [twitter](http://twitter.com/PabloSerbo)
+[Paul Serby](https://github.com/serby/) follow me on [twitter](http://twitter.com/serby)
 
 ## Licence
 Licenced under the [New BSD License](http://opensource.org/licenses/bsd-license.php)
