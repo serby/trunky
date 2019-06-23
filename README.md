@@ -1,6 +1,6 @@
 # trunky - Basic truncation and string tools
 
-[![build status](https://secure.travis-ci.org/serby/trunky.png)](http://travis-ci.org/serby/trunky)
+[![build status](https://secure.travis-ci.org/serby/trunky.png)](http://travis-ci.org/serby/trunky) [![Greenkeeper badge](https://badges.greenkeeper.io/serby/trunky.svg)](https://greenkeeper.io/)
 
 ## Installation
 
