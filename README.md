@@ -2,6 +2,8 @@
 
 [![build status](https://secure.travis-ci.org/serby/trunky.png)](http://travis-ci.org/serby/trunky)
 
+This package is no longer maintained, use [ellipsize](https://www.npmjs.com/package/ellipsize)
+
 ## Installation
 
     npm install trunky
